@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E762B1A0F37003C3776 /* AppDelegate.swift */; };
-		DAB62E792B1A0F37003C3776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E782B1A0F37003C3776 /* SceneDelegate.swift */; };
-		DAB62E7B2B1A0F37003C3776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E7A2B1A0F37003C3776 /* ViewController.swift */; };
-		DAB62E7E2B1A0F37003C3776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E7C2B1A0F37003C3776 /* Main.storyboard */; };
+		DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */; };
+		DAB62E7E2B1A0F37003C3776 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E7C2B1A0F37003C3776 /* MainMenu.storyboard */; };
 		DAB62E802B1A0F39003C3776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E7F2B1A0F39003C3776 /* Assets.xcassets */; };
 		DAB62E832B1A0F39003C3776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E812B1A0F39003C3776 /* LaunchScreen.storyboard */; };
 		DAB62E8E2B1A0F39003C3776 /* AncientEgyptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E8D2B1A0F39003C3776 /* AncientEgyptTests.swift */; };
 		DAB62E982B1A0F39003C3776 /* AncientEgyptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E972B1A0F39003C3776 /* AncientEgyptUITests.swift */; };
 		DAB62E9A2B1A0F39003C3776 /* AncientEgyptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E992B1A0F39003C3776 /* AncientEgyptUITestsLaunchTests.swift */; };
+		DAB62EAA2B1A11D7003C3776 /* Sigmar-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB62EA92B1A11D7003C3776 /* Sigmar-Regular.ttf */; };
+		DAB62EB62B1A13D5003C3776 /* MainMenuIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62EB52B1A13D5003C3776 /* MainMenuIteractor.swift */; };
+		DAB62EB92B1A13F6003C3776 /* MainMenuSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62EB82B1A13F6003C3776 /* MainMenuSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,8 @@
 /* Begin PBXFileReference section */
 		DAB62E732B1A0F37003C3776 /* AncientEgypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncientEgypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB62E762B1A0F37003C3776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAB62E782B1A0F37003C3776 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAB62E7A2B1A0F37003C3776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAB62E7D2B1A0F37003C3776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		DAB62E7D2B1A0F37003C3776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMenu.storyboard; sourceTree = "<group>"; };
 		DAB62E7F2B1A0F39003C3776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB62E822B1A0F39003C3776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB62E842B1A0F39003C3776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		DAB62E932B1A0F39003C3776 /* AncientEgyptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AncientEgyptUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB62E972B1A0F39003C3776 /* AncientEgyptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientEgyptUITests.swift; sourceTree = "<group>"; };
 		DAB62E992B1A0F39003C3776 /* AncientEgyptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AncientEgyptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DAB62EA92B1A11D7003C3776 /* Sigmar-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sigmar-Regular.ttf"; sourceTree = "<group>"; };
+		DAB62EB52B1A13D5003C3776 /* MainMenuIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuIteractor.swift; sourceTree = "<group>"; };
+		DAB62EB82B1A13F6003C3776 /* MainMenuSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,8 @@
 		DAB62E752B1A0F37003C3776 /* AncientEgypt */ = {
 			isa = PBXGroup;
 			children = (
-				DAB62E762B1A0F37003C3776 /* AppDelegate.swift */,
-				DAB62E782B1A0F37003C3776 /* SceneDelegate.swift */,
-				DAB62E7A2B1A0F37003C3776 /* ViewController.swift */,
-				DAB62E7C2B1A0F37003C3776 /* Main.storyboard */,
-				DAB62E7F2B1A0F39003C3776 /* Assets.xcassets */,
-				DAB62E812B1A0F39003C3776 /* LaunchScreen.storyboard */,
-				DAB62E842B1A0F39003C3776 /* Info.plist */,
+				DAB62EA62B1A11B8003C3776 /* Application */,
+				DAB62EAB2B1A11F0003C3776 /* Modules */,
 			);
 			path = AncientEgypt;
 			sourceTree = "<group>";
@@ -125,6 +124,125 @@
 				DAB62E992B1A0F39003C3776 /* AncientEgyptUITestsLaunchTests.swift */,
 			);
 			path = AncientEgyptUITests;
+			sourceTree = "<group>";
+		};
+		DAB62EA62B1A11B8003C3776 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62E812B1A0F39003C3776 /* LaunchScreen.storyboard */,
+				DAB62EB42B1A1378003C3776 /* Initialization */,
+				DAB62EA72B1A11C1003C3776 /* Resources */,
+				DAB62E762B1A0F37003C3776 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DAB62EA72B1A11C1003C3776 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EA82B1A11CE003C3776 /* Fonts */,
+				DAB62E7F2B1A0F39003C3776 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DAB62EA82B1A11CE003C3776 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EA92B1A11D7003C3776 /* Sigmar-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DAB62EAB2B1A11F0003C3776 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EAC2B1A11F8003C3776 /* Menu */,
+				DAB62EAD2B1A1257003C3776 /* Competition */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DAB62EAC2B1A11F8003C3776 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EB72B1A13E6003C3776 /* Support */,
+				DAB62E7C2B1A0F37003C3776 /* MainMenu.storyboard */,
+				DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */,
+				DAB62EB52B1A13D5003C3776 /* MainMenuIteractor.swift */,
+				DAB62EB02B1A129D003C3776 /* Leaders */,
+				DAB62EAF2B1A1291003C3776 /* Privacy */,
+				DAB62EAE2B1A128B003C3776 /* Tutorial */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DAB62EAD2B1A1257003C3776 /* Competition */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EB12B1A12AD003C3776 /* Mode */,
+				DAB62EB22B1A12C2003C3776 /* Play */,
+				DAB62EB32B1A12D1003C3776 /* CompetitionResult */,
+			);
+			path = Competition;
+			sourceTree = "<group>";
+		};
+		DAB62EAE2B1A128B003C3776 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		DAB62EAF2B1A1291003C3776 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		DAB62EB02B1A129D003C3776 /* Leaders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Leaders;
+			sourceTree = "<group>";
+		};
+		DAB62EB12B1A12AD003C3776 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		DAB62EB22B1A12C2003C3776 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		DAB62EB32B1A12D1003C3776 /* CompetitionResult */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CompetitionResult;
+			sourceTree = "<group>";
+		};
+		DAB62EB42B1A1378003C3776 /* Initialization */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62E842B1A0F39003C3776 /* Info.plist */,
+			);
+			path = Initialization;
+			sourceTree = "<group>";
+		};
+		DAB62EB72B1A13E6003C3776 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DAB62EB82B1A13F6003C3776 /* MainMenuSupport.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +349,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB62EAA2B1A11D7003C3776 /* Sigmar-Regular.ttf in Resources */,
 				DAB62E832B1A0F39003C3776 /* LaunchScreen.storyboard in Resources */,
 				DAB62E802B1A0F39003C3776 /* Assets.xcassets in Resources */,
-				DAB62E7E2B1A0F37003C3776 /* Main.storyboard in Resources */,
+				DAB62E7E2B1A0F37003C3776 /* MainMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB62E7B2B1A0F37003C3776 /* ViewController.swift in Sources */,
+				DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */,
+				DAB62EB62B1A13D5003C3776 /* MainMenuIteractor.swift in Sources */,
 				DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */,
-				DAB62E792B1A0F37003C3776 /* SceneDelegate.swift in Sources */,
+				DAB62EB92B1A13F6003C3776 /* MainMenuSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +417,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DAB62E7C2B1A0F37003C3776 /* Main.storyboard */ = {
+		DAB62E7C2B1A0F37003C3776 /* MainMenu.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAB62E7D2B1A0F37003C3776 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainMenu.storyboard;
 			sourceTree = "<group>";
 		};
 		DAB62E812B1A0F39003C3776 /* LaunchScreen.storyboard */ = {
@@ -443,10 +563,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AncientEgypt/Info.plist;
+				INFOPLIST_FILE = AncientEgypt/Application/Initialization/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,9 +576,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gia.AncientEgypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,10 +592,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AncientEgypt/Info.plist;
+				INFOPLIST_FILE = AncientEgypt/Application/Initialization/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainMenu;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,9 +605,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gia.AncientEgypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
