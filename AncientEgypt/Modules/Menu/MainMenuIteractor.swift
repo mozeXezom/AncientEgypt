@@ -8,6 +8,12 @@
 import UIKit
 
 final class MainMenuIteractor {
+    private let appNavigationService = AppNavigationService()
+    
+    var board: UIStoryboard {
+        return UIStoryboard(name: "MainMenu", bundle: nil)
+    }
+    
     var backgroundMain: UIImage {
         return UIImage(named: MainMenuSupport.Images.mainBackgroundImage)!
     }
@@ -54,5 +60,21 @@ final class MainMenuIteractor {
     
     var friendDescription: String {
         return MainMenuSupport.Text.friendText
+    }
+    
+    func configureNavigationToTutorial(_ view: UIViewController) {
+        if let tutorialView = board.instantiateViewController(withIdentifier: "tutorialView") as? TutorialView {
+            tutorialView.modalPresentationStyle = .fullScreen
+            tutorialView.modalTransitionStyle = .crossDissolve
+            appNavigationService.makeViewPresentation(view, tutorialView)
+        }
+    }
+    
+    func configureNavigationToLeaders(_ view: UIViewController) {
+        if let leadersView = board.instantiateViewController(withIdentifier: "leadersView") as? LeadersView {
+            leadersView.modalPresentationStyle = .fullScreen
+            leadersView.modalTransitionStyle = .crossDissolve
+            appNavigationService.makeViewPresentation(view, leadersView)
+        }
     }
 }

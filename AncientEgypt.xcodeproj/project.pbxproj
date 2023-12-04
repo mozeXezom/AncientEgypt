@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		DA8552E62B1E23A0003B1C04 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552E52B1E23A0003B1C04 /* TutorialView.swift */; };
 		DA8552E82B1E24AD003B1C04 /* TutorialIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552E72B1E24AD003B1C04 /* TutorialIteractor.swift */; };
+		DA8552EB2B1E2E5B003B1C04 /* AppNavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552EA2B1E2E5B003B1C04 /* AppNavigationService.swift */; };
+		DA8552ED2B1E31CD003B1C04 /* LeadersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552EC2B1E31CD003B1C04 /* LeadersView.swift */; };
+		DA8552EF2B1E31DC003B1C04 /* LeadersIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552EE2B1E31DC003B1C04 /* LeadersIteractor.swift */; };
+		DA8552F32B1E3460003B1C04 /* LeadersTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552F12B1E3460003B1C04 /* LeadersTableCell.swift */; };
+		DA8552F42B1E3460003B1C04 /* LeadersTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8552F22B1E3460003B1C04 /* LeadersTableCell.xib */; };
+		DA8552F62B1E3AB2003B1C04 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552F52B1E3AB2003B1C04 /* CellModel.swift */; };
 		DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E762B1A0F37003C3776 /* AppDelegate.swift */; };
 		DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */; };
 		DAB62E7E2B1A0F37003C3776 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E7C2B1A0F37003C3776 /* MainMenu.storyboard */; };
@@ -42,6 +48,12 @@
 /* Begin PBXFileReference section */
 		DA8552E52B1E23A0003B1C04 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		DA8552E72B1E24AD003B1C04 /* TutorialIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialIteractor.swift; sourceTree = "<group>"; };
+		DA8552EA2B1E2E5B003B1C04 /* AppNavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationService.swift; sourceTree = "<group>"; };
+		DA8552EC2B1E31CD003B1C04 /* LeadersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersView.swift; sourceTree = "<group>"; };
+		DA8552EE2B1E31DC003B1C04 /* LeadersIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersIteractor.swift; sourceTree = "<group>"; };
+		DA8552F12B1E3460003B1C04 /* LeadersTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadersTableCell.swift; sourceTree = "<group>"; };
+		DA8552F22B1E3460003B1C04 /* LeadersTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeadersTableCell.xib; sourceTree = "<group>"; };
+		DA8552F52B1E3AB2003B1C04 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		DAB62E732B1A0F37003C3776 /* AncientEgypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncientEgypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB62E762B1A0F37003C3776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -84,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA8552E92B1E2E4B003B1C04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA8552EA2B1E2E5B003B1C04 /* AppNavigationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA8552F02B1E344B003B1C04 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA8552F12B1E3460003B1C04 /* LeadersTableCell.swift */,
+				DA8552F22B1E3460003B1C04 /* LeadersTableCell.xib */,
+				DA8552F52B1E3AB2003B1C04 /* CellModel.swift */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
 		DAB62E6A2B1A0F37003C3776 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB62E812B1A0F39003C3776 /* LaunchScreen.storyboard */,
+				DA8552E92B1E2E4B003B1C04 /* Services */,
 				DAB62EB42B1A1378003C3776 /* Initialization */,
 				DAB62EA72B1A11C1003C3776 /* Resources */,
 				DAB62E762B1A0F37003C3776 /* AppDelegate.swift */,
@@ -210,6 +241,9 @@
 		DAB62EB02B1A129D003C3776 /* Leaders */ = {
 			isa = PBXGroup;
 			children = (
+				DA8552F02B1E344B003B1C04 /* TableCell */,
+				DA8552EC2B1E31CD003B1C04 /* LeadersView.swift */,
+				DA8552EE2B1E31DC003B1C04 /* LeadersIteractor.swift */,
 			);
 			path = Leaders;
 			sourceTree = "<group>";
@@ -356,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB62EAA2B1A11D7003C3776 /* Sigmar-Regular.ttf in Resources */,
+				DA8552F42B1E3460003B1C04 /* LeadersTableCell.xib in Resources */,
 				DAB62E832B1A0F39003C3776 /* LaunchScreen.storyboard in Resources */,
 				DAB62E802B1A0F39003C3776 /* Assets.xcassets in Resources */,
 				DAB62E7E2B1A0F37003C3776 /* MainMenu.storyboard in Resources */,
@@ -383,12 +418,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8552F62B1E3AB2003B1C04 /* CellModel.swift in Sources */,
+				DA8552EB2B1E2E5B003B1C04 /* AppNavigationService.swift in Sources */,
 				DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */,
 				DA8552E82B1E24AD003B1C04 /* TutorialIteractor.swift in Sources */,
 				DAB62EB62B1A13D5003C3776 /* MainMenuIteractor.swift in Sources */,
+				DA8552F32B1E3460003B1C04 /* LeadersTableCell.swift in Sources */,
 				DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */,
 				DA8552E62B1E23A0003B1C04 /* TutorialView.swift in Sources */,
 				DAB62EB92B1A13F6003C3776 /* MainMenuSupport.swift in Sources */,
+				DA8552EF2B1E31DC003B1C04 /* LeadersIteractor.swift in Sources */,
+				DA8552ED2B1E31CD003B1C04 /* LeadersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,6 +40,10 @@ class TutorialView: UIViewController {
     }
     
     @IBAction func skipTutorialSender(_ sender: UIButton) {
-        
+        iteractor.configureNavigationToMainMenu(self)
+    }
+    
+    @IBAction func menuSender(_ sender: UIButton) {
+        iteractor.configureNavigationToMainMenu(self)
     }
 }

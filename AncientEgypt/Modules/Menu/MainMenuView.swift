@@ -49,5 +49,13 @@ class MainMenuView: UIViewController {
         privacyPolicyBtn.setTitle(iteractor.privacyDescription, for: .normal)
         addFriendBtn.setTitle(iteractor.friendDescription, for: .normal)
     }
+    
+    @IBAction func leadersSender(_ sender: UIButton) {
+        iteractor.configureNavigationToLeaders(self)
+    }
+    
+    @IBAction func tutorialSender(_ sender: UIButton) {
+        iteractor.configureNavigationToTutorial(self)
+    }
 }
 

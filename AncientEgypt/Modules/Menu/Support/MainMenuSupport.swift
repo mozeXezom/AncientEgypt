@@ -21,7 +21,7 @@ struct MainMenuSupport {
         static let friendIcon = "friendIcon"
         
         struct Leaders {
-            
+            static let leadersImage = "leadersImage"
         }
         
         struct Privacy {
