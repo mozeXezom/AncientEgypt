@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA8552E62B1E23A0003B1C04 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552E52B1E23A0003B1C04 /* TutorialView.swift */; };
+		DA8552E82B1E24AD003B1C04 /* TutorialIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8552E72B1E24AD003B1C04 /* TutorialIteractor.swift */; };
 		DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E762B1A0F37003C3776 /* AppDelegate.swift */; };
 		DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */; };
 		DAB62E7E2B1A0F37003C3776 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB62E7C2B1A0F37003C3776 /* MainMenu.storyboard */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA8552E52B1E23A0003B1C04 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		DA8552E72B1E24AD003B1C04 /* TutorialIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialIteractor.swift; sourceTree = "<group>"; };
 		DAB62E732B1A0F37003C3776 /* AncientEgypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AncientEgypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB62E762B1A0F37003C3776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB62E7A2B1A0F37003C3776 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 		DAB62EAE2B1A128B003C3776 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DA8552E52B1E23A0003B1C04 /* TutorialView.swift */,
+				DA8552E72B1E24AD003B1C04 /* TutorialIteractor.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -378,8 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB62E7B2B1A0F37003C3776 /* MainMenuView.swift in Sources */,
+				DA8552E82B1E24AD003B1C04 /* TutorialIteractor.swift in Sources */,
 				DAB62EB62B1A13D5003C3776 /* MainMenuIteractor.swift in Sources */,
 				DAB62E772B1A0F37003C3776 /* AppDelegate.swift in Sources */,
+				DA8552E62B1E23A0003B1C04 /* TutorialView.swift in Sources */,
 				DAB62EB92B1A13F6003C3776 /* MainMenuSupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

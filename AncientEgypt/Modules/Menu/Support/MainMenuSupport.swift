@@ -29,7 +29,11 @@ struct MainMenuSupport {
         }
         
         struct Tutorial {
-            
+            static let ancientCoinIcon = "ancientCoin"
+            static let ancientSkipButton = "ancientSkip"
+            static let anubisImage = "anubisImage"
+            static let pointsAmountImage = "pointsAmount"
+            static let tutorialImage = "tutorialImage"
         }
     }
     
