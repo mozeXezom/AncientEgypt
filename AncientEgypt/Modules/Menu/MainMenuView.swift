@@ -50,12 +50,32 @@ class MainMenuView: UIViewController {
         addFriendBtn.setTitle(iteractor.friendDescription, for: .normal)
     }
     
+    @IBAction func playSender(_ sender: UIButton) {
+        iteractor.configureNavigationToMode(self)
+    }
+    
     @IBAction func leadersSender(_ sender: UIButton) {
         iteractor.configureNavigationToLeaders(self)
     }
     
     @IBAction func tutorialSender(_ sender: UIButton) {
         iteractor.configureNavigationToTutorial(self)
+    }
+    
+    @IBAction func menuSettingsSender(_ sender: UIButton) {
+        iteractor.configureNavigationToMenuSettings(self)
+    }
+    
+    @IBAction func addFriendSender(_ sender: UIButton) {
+        iteractor.iteractInviteEvent(self)
+    }
+    
+    @IBAction func exitSender(_ sender: UIButton) {
+        iteractor.configureNavigationToTutorial(self)
+    }
+    
+    @IBAction func privacySender(_ sender: UIButton) {
+        iteractor.configureNavigationToPrivacy(self)
     }
 }
 

@@ -14,6 +14,10 @@ final class MainMenuIteractor {
         return UIStoryboard(name: "MainMenu", bundle: nil)
     }
     
+    var competitionBoard: UIStoryboard {
+        return UIStoryboard(name: "Competition", bundle: nil)
+    }
+    
     var backgroundMain: UIImage {
         return UIImage(named: MainMenuSupport.Images.mainBackgroundImage)!
     }
@@ -62,6 +66,14 @@ final class MainMenuIteractor {
         return MainMenuSupport.Text.friendText
     }
     
+    var inviteMenuUrlString: String {
+        return "https://www.apple.com/app-store/"
+    }
+    
+    var inviteMenuMsg: String {
+        return "I invite you to play a wonderful game called AncientEgypt!"
+    }
+    
     func configureNavigationToTutorial(_ view: UIViewController) {
         if let tutorialView = board.instantiateViewController(withIdentifier: "tutorialView") as? TutorialView {
             tutorialView.modalPresentationStyle = .fullScreen
@@ -75,6 +87,37 @@ final class MainMenuIteractor {
             leadersView.modalPresentationStyle = .fullScreen
             leadersView.modalTransitionStyle = .crossDissolve
             appNavigationService.makeViewPresentation(view, leadersView)
+        }
+    }
+    
+    func configureNavigationToMode(_ view: UIViewController) {
+        if let modeView = competitionBoard.instantiateViewController(withIdentifier: "modeView") as? ModeView {
+            modeView.modalPresentationStyle = .fullScreen
+            modeView.modalTransitionStyle = .crossDissolve
+            appNavigationService.makeViewPresentation(view, modeView)
+        }
+    }
+    
+    func configureNavigationToMenuSettings(_ view: UIViewController) {
+        if let menuSettingsView = board.instantiateViewController(withIdentifier: "settingsView") as? SettingsView {
+            menuSettingsView.modalPresentationStyle = .fullScreen
+            menuSettingsView.modalTransitionStyle = .crossDissolve
+            appNavigationService.makeViewPresentation(view, menuSettingsView)
+        }
+    }
+    
+    func configureNavigationToPrivacy(_ view: UIViewController) {
+        if let privacyView = board.instantiateViewController(withIdentifier: "privacyView") as? PrivacyView {
+            privacyView.modalPresentationStyle = .fullScreen
+            privacyView.modalTransitionStyle = .crossDissolve
+            appNavigationService.makeViewPresentation(view, privacyView)
+        }
+    }
+    
+    func iteractInviteEvent(_ view: UIViewController) {
+        if let eventInviteUrl = URL(string: inviteMenuUrlString) {
+            let menuActivityView = UIActivityViewController(activityItems: [inviteMenuMsg, eventInviteUrl], applicationActivities: nil)
+            view.present(menuActivityView, animated: true, completion: nil)
         }
     }
 }

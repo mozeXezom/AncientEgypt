@@ -35,6 +35,13 @@ struct MainMenuSupport {
             static let pointsAmountImage = "pointsAmount"
             static let tutorialImage = "tutorialImage"
         }
+        
+        struct Mode {
+            static let chooseModeImage = "chooseMode"
+            static let hardModeImage = "hardMode"
+            static let mediumModeImage = "mediumMode"
+            static let easyModeImage = "easyMode"
+        }
     }
     
     struct Text {
