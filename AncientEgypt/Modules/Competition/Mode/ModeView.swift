@@ -20,6 +20,7 @@ class ModeView: UIViewController {
     @IBOutlet weak var modeMenuBtn: UIButton!
     
     private let iteractor: ModeIteractor = ModeIteractor()
+    private var modeDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,11 @@ class ModeView: UIViewController {
     
     private func iteractModeView() {
         iteractModeImages()
+        interactModeCoins()
+    }
+    
+    private func interactModeCoins() {
+        modeCoinsLbl.text = "\(modeDefaults.value(forKey: "receivedCoins") ?? "10")"
     }
     
     private func iteractModeImages() {

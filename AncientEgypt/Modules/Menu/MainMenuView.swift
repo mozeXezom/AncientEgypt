@@ -16,7 +16,8 @@ class MainMenuView: UIViewController {
     @IBOutlet weak var playBtn: UIButton!
     @IBOutlet weak var leadersBtn: UIButton!
     @IBOutlet weak var exitBtn: UIButton!
-    @IBOutlet weak var egyptsImageView: UIImageView!
+    @IBOutlet weak var egyptManImgView: UIImageView!
+    @IBOutlet weak var egyptWomanImgView: UIImageView!
     @IBOutlet weak var privacyPolicyBtn: UIButton!
     @IBOutlet weak var addFriendBtn: UIButton!
     
@@ -35,7 +36,8 @@ class MainMenuView: UIViewController {
     private func iteractMainMenuImages() {
         mainBgImageView.image = iteractor.backgroundMain
         mainMenuLogo.image = iteractor.mainLogo
-        egyptsImageView.image = iteractor.egypts
+        egyptManImgView.image = iteractor.egyptMan
+        egyptWomanImgView.image = iteractor.egyptWoman
         tutorialBtn.setImage(iteractor.tutorial, for: .normal)
         settingsBtn.setImage(iteractor.settings, for: .normal)
         playBtn.setImage(iteractor.play, for: .normal)

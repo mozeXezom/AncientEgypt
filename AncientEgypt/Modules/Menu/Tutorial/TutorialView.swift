@@ -19,6 +19,7 @@ class TutorialView: UIViewController {
     @IBOutlet weak var skipTutorialBtn: UIButton!
     
     private let iteractor: TutorialIteractor = TutorialIteractor()
+    private var tutorialDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,11 @@ class TutorialView: UIViewController {
     
     private func iteractTutorial() {
         iteractTutorialImages()
+        interactTutorialCoins()
+    }
+    
+    private func interactTutorialCoins() {
+        allCoinsLabel.text = "\(tutorialDefaults.value(forKey: "receivedCoins") ?? "10")"
     }
     
     private func iteractTutorialImages() {

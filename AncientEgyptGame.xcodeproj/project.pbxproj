@@ -436,7 +436,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DAB62E6E2B1A0F37003C3776 /* Build configuration list for PBXProject "AncientEgypt" */;
+			buildConfigurationList = DAB62E6E2B1A0F37003C3776 /* Build configuration list for PBXProject "AncientEgyptGame" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -840,7 +840,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAB62E6E2B1A0F37003C3776 /* Build configuration list for PBXProject "AncientEgypt" */ = {
+		DAB62E6E2B1A0F37003C3776 /* Build configuration list for PBXProject "AncientEgyptGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAB62E9B2B1A0F39003C3776 /* Debug */,

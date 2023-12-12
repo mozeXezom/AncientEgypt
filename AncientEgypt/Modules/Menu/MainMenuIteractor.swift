@@ -22,8 +22,12 @@ final class MainMenuIteractor {
         return UIImage(named: MainMenuSupport.Images.mainBackgroundImage)!
     }
     
-    var egypts: UIImage {
-        return UIImage(named: MainMenuSupport.Images.egyptsIcon)!
+    var egyptMan: UIImage {
+        return UIImage(named: MainMenuSupport.Images.egyptsMIcon)!
+    }
+    
+    var egyptWoman: UIImage {
+        return UIImage(named: MainMenuSupport.Images.egyptsWIcon)!
     }
     
     var exit: UIImage {

@@ -18,6 +18,7 @@ class LeadersView: UIViewController {
     @IBOutlet weak var leadersBgImgView: UIImageView!
     
     private let iteractor: LeadersIteractor = LeadersIteractor()
+    private var leadersDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class LeadersView: UIViewController {
     
     private func iteractLeaders() {
         iteractLeadersImages()
+        interactLeadersCoins()
         iteractLeadersTableView()
     }
     
@@ -35,6 +37,10 @@ class LeadersView: UIViewController {
         coinImgView.image = iteractor.leadersCoin
         leadersMenuBtn.setImage(iteractor.menuLeaders, for: .normal)
         leadersBgImgView.image = iteractor.backgroundLeaders
+    }
+    
+    private func interactLeadersCoins() {
+        leadersCoinsLbl.text = "\(leadersDefaults.value(forKey: "receivedCoins") ?? "10")"
     }
     
     private func iteractLeadersTableView() {

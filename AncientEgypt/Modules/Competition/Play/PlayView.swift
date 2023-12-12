@@ -10,11 +10,7 @@ import UIKit
 class PlayView: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var counterImageView: UIImageView!
-    @IBOutlet weak var hiddenView: UIView!
     @IBOutlet weak var ancientQuestionImgView: UIImageView!
-    @IBOutlet weak var ancientCounterView: UIImageView!
-    @IBOutlet weak var ancientAnimatedImgView: UIImageView!
     
     @IBOutlet weak var playBackground: UIImageView!
     @IBOutlet weak var playCoinsView: UIImageView!
@@ -23,10 +19,10 @@ class PlayView: UIViewController {
     @IBOutlet weak var menuPlayBtn: UIButton!
     @IBOutlet var selectableBtns: [UIButton]!
     @IBOutlet weak var ancientQuestionLbl: UILabel!
-    @IBOutlet weak var animatedWidth: NSLayoutConstraint!
-    @IBOutlet weak var labelWidth: NSLayoutConstraint!
+    @IBOutlet weak var timerImgView: UIImageView!
     
     private let iteractor: PlayIteractor = PlayIteractor()
+    private var playDefaults = UserDefaults.standard
     private var ancientIndex = 0
     private var ancientTimer: Timer?
     private var secondsRemaining = 30
@@ -36,29 +32,16 @@ class PlayView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         iteractPlayView()
+        interactSavedCoins()
         iteractGameStartState()
-    }
-    
-    func startExpandingAnimation() {
-        //counterImageView.frame.size.width = self.hiddenView.frame.width
-        
-        print("Initial Width: \(counterImageView.frame.size.width)")
-        print("Target Width: \(self.timerLabel.frame.origin.x + self.timerLabel.frame.width)")
-        
-        UIView.animate(withDuration: 30.0, animations: {
-            self.animatedWidth.constant = self.timerLabel.frame.width
-            self.view.layoutIfNeeded()
-            //self.counterImageView.frame.size.width = self.hiddenView.frame.width + self.timerLabel.frame.width
-            print("Current Width: \(self.counterImageView.frame.size.width)")
-        }) { (finished) in
-            if finished {
-                print("Animation completed")
-            }
-        }
     }
     
     private func iteractGameStartState() {
         iteractAncientGame()
+    }
+    
+    private func interactSavedCoins() {
+        playCoinsLbl.text = "\(playDefaults.value(forKey: "receivedCoins") ?? "10")"
     }
     
     private func iteractAncientGame() {
@@ -77,13 +60,11 @@ class PlayView: UIViewController {
     private func iteractTimer() {
         ancientTimer?.invalidate()
         secondsRemaining = 30
-        startExpandingAnimation()
         ancientTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(pronkTimer), userInfo: nil, repeats: true)
     }
     
     @objc func pronkTimer() {
         timerLabel.text = "\(secondsRemaining) sec"
-        
         if secondsRemaining > 0 {
             secondsRemaining -= 1
         } else {
@@ -143,8 +124,7 @@ class PlayView: UIViewController {
         coinPlayImgView.image = iteractor.coinPlay
         menuPlayBtn.setImage(iteractor.playMenu, for: .normal)
         ancientQuestionImgView.image = iteractor.ancientQuestion
-        ancientCounterView.image = iteractor.ancientCounter
-        ancientAnimatedImgView.image = iteractor.ancientAnimated
+        timerImgView.image = iteractor.playCoinsAmount
     }
     
     @IBAction func answerButtonTapped(_ sender: UIButton) {

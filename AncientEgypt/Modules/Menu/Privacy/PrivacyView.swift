@@ -14,6 +14,7 @@ class PrivacyView: UIViewController {
     @IBOutlet weak var backgroundPrivacy: UIImageView!
     @IBOutlet weak var allowBtn: UIButton!
     @IBOutlet weak var privacyImgView: UIImageView!
+    @IBOutlet weak var privacyTxtView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class PrivacyView: UIViewController {
     }
     
     private func iteractPrivacy() {
+        privacyTxtView.text = iteractor.privacyDescription
         backgroundPrivacy.image = iteractor.backgroundPrivacy
         privacyImgView.image = iteractor.policy
         allowBtn.setImage(iteractor.allow, for: .normal)

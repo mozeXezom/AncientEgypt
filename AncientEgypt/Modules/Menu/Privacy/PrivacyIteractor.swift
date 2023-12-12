@@ -14,6 +14,10 @@ final class PrivacyIteractor {
         return UIStoryboard(name: "MainMenu", bundle: nil)
     }
     
+    var privacyDescription: String {
+        return MainMenuSupport.Text.privacyDescriptionText
+    }
+    
     var policy: UIImage {
         return UIImage(named: "privacyView")!
     }

@@ -25,7 +25,8 @@ class ExtendView: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        iteractExtendView()
+        iteractor.configureNavigationToMain(self)
+        //iteractExtendView()
     }
     
     private func iteractExtend() {

@@ -49,6 +49,9 @@ class CompetitionResultView: UIViewController {
     private func iteractResultState() {
         if endGameState {
             winCoinsLbl.text = "\(resultDefaults.value(forKey: "receivedCoins") ?? "10")"
+            var currentCoins = resultDefaults.integer(forKey: "receivedCoins")
+            currentCoins += 10
+            resultDefaults.set(currentCoins, forKey: "receivedCoins")
             resultBackground.image = iteractor.winBackground
             loseView.isHidden = true
         } else {
